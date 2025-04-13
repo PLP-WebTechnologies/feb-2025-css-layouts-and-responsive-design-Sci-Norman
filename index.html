@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norman Wayaya - Computer Science</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem 0;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .skill-card {
+            flex: 1 1 300px;
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+        }
+        
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            
+            .skill-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Norman Wayaya</h1>
+        <p>Computer Science Student</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about" class="intro">
+            <h2>About Me</h2>
+            <p>I'm a Computer Science student passionate about web development and programming.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Python, Java, C++</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Databases</h3>
+                    <p>SQL, MongoDB</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Personal portfolio website (HTML/CSS)</p>
+            <p>E-commerce prototype (JavaScript)</p>
+            <p>Student management system (Python)</p>
+        </section>
+    </main>
+    
+    <footer id="contact">
+        <p>Contact me at: norman@example.com</p>
+        <p>&copy; 2023 Norman Wayaya</p>
+    </footer>
+</body>
+</html>
